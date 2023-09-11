@@ -1,0 +1,97 @@
+.wrap{
+    padding: var(--vertical-padding) 0;
+    min-height: 80vh;
+
+    .container{
+        display: flex;
+        nav{
+            width: 180px;
+            flex-shrink: 0; 
+            border-right: 1px solid #555;
+            
+            h3{font-size:30px; font-weight: 500; margin-bottom: 30px;}
+           
+            ul{
+                > li{
+                    button, a{
+                        display: block; width: 100%; text-align: left; color: #fff; font-size: 15px; padding: 13px 5px;
+
+                        &:hover{background: rgba(255, 255, 255, 0.1); color: var(--color1)}
+                       
+                    }
+
+                    
+                    ol{
+                        margin-bottom: 10px; 
+                        li{
+                            a,
+                            button{font-weight: 400; padding: 8px 5px; padding-left: 15px;}
+
+                            &.active{
+                                > a{color: var(--color1)}
+                            }
+                        }
+                    }
+
+                    &.active{
+                        > a{color: var(--color1)}
+                    }
+
+                }
+            }
+        }
+
+        .contents{
+            flex: 1;
+            flex-grow: 1;
+            padding: 0 45px;
+            max-width: calc(100% - 180px);
+            .header{
+                margin-bottom: var(--vertical-padding);
+                h4{font-weight: 500; font-size: 20px;}
+                p{font-size: 15px; margin-top: 15px;}
+                p b{color: var(--color1)}
+            }
+           
+
+            // .myContents{padding: 30px 0;}
+        }
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .wrap{
+        .container{
+            .contents{
+                padding: 0 25px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .wrap{
+        .container{
+            display: block;
+            nav{
+                margin-bottom: 20px;
+                border: none;
+                width: 100%;
+                h3{font-size: 18px; margin-bottom: 0;}
+                ul{
+                    display: flex; gap: 15px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #555;
+                    li button,
+                    li a{font-size: 13px;}
+                    svg{display: none;}
+                    ol{display: none;}
+                }
+            }
+            .contents{
+               padding: 0;
+            }
+        }
+    }
+}

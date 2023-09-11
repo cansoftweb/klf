@@ -1,0 +1,46 @@
+/*
+ * reset
+*/
+*{margin: 0;padding: 0; text-decoration: none;  list-style: none; box-sizing: border-box; -webkit-text-size-adjust: none;  box-sizing: border-box;  
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-touch-callout: none;
+    font-family: 'Roboto', 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; 
+}
+a{color: #fff;}
+body{color: #fff;
+   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6{border: none;}
+button{background: none; border: none; cursor: pointer;}
+img{border: none;}
+.clear::after{content: " "; display: block; clear: both;}
+::-webkit-input-placeholder {color: #999;}
+:-moz-placeholder {color: #999; opacity:1;}
+::-moz-placeholder {color: #999; opacity:1;}
+:-ms-input-placeholder {color: #999;}
+:placeholder-shown {color: #999;}
+table{border-collapse: collapse;}
+select::-ms-expand {display:none}
+
+/* form reset */
+input:focus{outline: none;}
+select{appearance: none; -moz-appearance: none; -webkit-appearance: none;  -ms-appearance: none;  border: 1px solid #ccc; padding: 0 10px; padding-right: 20px; background: #fff no-repeat center right 10px/10px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23ccc' viewBox='0 0 24 24'%3E%3Cpath d='M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z'/%3E%3C/svg%3E");}
+select:focus{outline: none;}
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=text]{appearance: none; -webkit-appearance: none; -moz-appearance: none;  box-shadow: none; border: 1px solid #ccc; background: #fff; padding: 0 10px; height: 42px; font-size: 14px; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+img{
+    image-rendering: -moz-crisp-edges; /* Firefox */ image-rendering: -o-crisp-edges; /* Opera */ image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */ image-rendering: crisp-edges; -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
