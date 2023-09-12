@@ -80,13 +80,16 @@
                 margin-bottom: 20px;
                 border: none;
                 width: 100%;
-                h3{font-size: 18px; margin-bottom: 0;}
+                h3{font-size: 18px; margin-bottom: 0; display: none;}
                 ul{
-                    display: flex; gap: 15px; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #555;
-                    li button,
-                    li a{font-size: 13px;}
+                    // gap: 15px;
+                    // display: flex;  flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #555;
+                    > li > button,
+                    > li > a{font-size: 13px; display: none;}
                     svg{display: none;}
-                    ol{display: none;}
+                    ol{display: none; white-space: nowrap; width: 100%; overflow-x: auto; padding: 10px 0}
+                    > li.active ol{display: flex;}
+                    // ol{display: none;}
                 }
             }
             .contents{

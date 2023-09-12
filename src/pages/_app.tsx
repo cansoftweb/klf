@@ -9,6 +9,11 @@ import { useRouter } from 'next/router';
 import BaseLayout from './layout';
 
 
+//Provider와 store추가
+import { Provider } from "react-redux";
+import { store } from "../store/store";
+
+
 //react query 공통 에러처리
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -82,10 +87,16 @@ export default function App({ Component, pageProps }: AppProps) {
         <QueryClientProvider client={queryClient}>
           {process.env.NODE_ENV !== 'production' ? <ReactQueryDevtools initialIsOpen={false} /> : null}
     
-          {/* body */}
-            <BaseLayout>
-              <Component {...pageProps} />
-            </BaseLayout>
+          {/* redux provider */}
+          <Provider store={store}>
+
+            {/* body */}
+              <BaseLayout>
+                <Component {...pageProps} />
+              </BaseLayout>
+              
+          </Provider>
+
         </QueryClientProvider>
       </>
   );

@@ -19,6 +19,7 @@ const ClassViewList = () => {
 
                 @media (max-width: 1400px) {
                     h4{font-size: 22px; margin-bottom: 20px;}
+                    .list{gap: 15px;}
                 }
 
                 @media (max-width: 900px) {

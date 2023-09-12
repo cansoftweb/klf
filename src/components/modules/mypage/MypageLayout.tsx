@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getUserStorage, logout } from "@/pages/api/auth";
 import { useState, useEffect } from 'react';
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { navigationItems } from "./mypage_menu";
 
 const MypageLayout = ({ 
     title = '', 
@@ -26,41 +27,13 @@ const MypageLayout = ({
     const  [csToggle, setCsToggle] = useState(true)
     
 
-    // 마이페이지 메뉴
-    const navigationItems = [
-        { path: '/mypage', label: '내 정보 수정' },
-        { path: '/mypage/class', label: '수강중인 강의' },
-        { path: '/mypage/wish', label: '찜한 강의' },
-        {
-            path: '/mypage/open',
-            label: '강의 관리',
-            subItems: [
-                { path: '/mypage/open/write', label: '강의 등록' },
-                { path: '/mypage/open', label: '전체 (3)' },
-                { path: '/mypage/open?type=100', label: '판매중 (1)' },
-                { path: '/mypage/open?type=200', label: '승인대기중 (1)' },
-                { path: '/mypage/open?type=300', label: '판매중지 (1)' },
-            ],
-        },
-        { path: '/mypage/income', label: '수익 관리' },
-        {
-            path: '/mypage/cs',
-            label: '고객센터',
-            subItems: [
-                { path: '/mypage/cs', label: '공지사항' },
-                { path: '/mypage/cs/faq', label: '자주 묻는 질문' },
-                { path: '/mypage/cs/ask', label: '문의 내역' },
-            ],
-        },
-    ];
-
     return (
         <div className="inner">
             <div className={styles.wrap}>
             
                 <div className={styles.container}>
                     <nav>
-                        <h3>마이페이지</h3>
+                        <h3><Link href={'/mypage'}>마이페이지</Link></h3>
                         <ul>
                         {navigationItems.map((item) => (
                             <li

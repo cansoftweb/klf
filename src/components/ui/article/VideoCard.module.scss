@@ -5,7 +5,9 @@
     display: block;
 
     .img{
-        height: 175px; background: #ccc no-repeat center center/cover; position: relative;
+        // padding-top: 58%; max-height: 175px;
+        overflow: hidden;
+        background: #ccc no-repeat center center/cover; position: relative;
         .state{font-size: 12px; background: var(--color1); color: #fff; display: inline-block; padding: 15px 10px; position: absolute; right: 0; top: 0; border-bottom-left-radius: 10px;}
         .state.end{background: #555;}
     }

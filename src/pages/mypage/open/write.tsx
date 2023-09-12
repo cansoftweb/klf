@@ -20,7 +20,7 @@ const MyOpenWriteScreen = () => {
     }
 
     
-    const handleKeyPress = (event) => {
+    const handleKeyPress = (event:any) => {
         if (event.key === 'Enter') {
         // Enter 키를 눌렀을 때 폼 제출 또는 다른 작업을 수행합니다.
         // handleSubmit(event);
@@ -30,7 +30,7 @@ const MyOpenWriteScreen = () => {
     };
 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event:any) => {
         event.preventDefault();
         // 폼 데이터를 서버로 전송 또는 처리할 로직을 작성합니다.
         // console.log(formData);

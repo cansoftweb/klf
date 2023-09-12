@@ -102,27 +102,27 @@
   .wrap .container nav h3 {
     font-size: 18px;
     margin-bottom: 0;
+    display: none;
   }
-  .wrap .container nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 15px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-    border-bottom: 1px solid #555;
-  }
-  .wrap .container nav ul li button,
-  .wrap .container nav ul li a {
+  .wrap .container nav ul > li > button,
+  .wrap .container nav ul > li > a {
     font-size: 13px;
+    display: none;
   }
   .wrap .container nav ul svg {
     display: none;
   }
   .wrap .container nav ul ol {
     display: none;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  .wrap .container nav ul > li.active ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .wrap .container .contents {
     padding: 0;

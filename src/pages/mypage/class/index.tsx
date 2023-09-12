@@ -37,6 +37,14 @@ const MyClassScreen = () => {
                     max-width: 960px;
                     margin: 0 auto;
                     grid-template-columns: 1fr 1fr 1fr; /* 3개의 열로 변경 */
+                    gap: 20px;
+                }
+            }
+            @media (max-width: 1130px) {
+                .list {
+                    grid-template-columns: 1fr 1fr; /* 2개의 열로 변경 */
+                    gap: 15px;
+                    max-width: 530px;
                 }
             }
             @media (max-width: 900px) {

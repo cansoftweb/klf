@@ -64,7 +64,7 @@ const Header = () => {
                             className={styles.myBtn}
                             >로그인</Link>
                              <Link 
-                            href="/mypage"
+                            href="/mypage/info"
                             className={styles.myBtn}
                             >나의 강의</Link>
                         </div>

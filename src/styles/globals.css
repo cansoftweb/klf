@@ -45,9 +45,25 @@ body{background-color: #333332;}
 .nothing{text-align: center; color: #888; padding: 50px 0; font-size: 13px;}
 
 /* 버튼 */
-.mBtn{padding: 10px 15px; border-radius: 3px; font-size: 15px;}
+.mBtn{padding: 10px 15px; border-radius: 3px; font-size: 15px; text-align: center;}
+.nBtn{font-size: 16px; height: 35px; display: inline-flex; align-items: center; justify-content: center; gap: 5px;}
+
+.rBtn{border-radius: 100px; padding: 0 22px;}
+.wBtn{width: 100%; display: block;}
 
 .sColor1{background: var(--color1); color: #fff}
+.sColor1:hover{background: #eea01a;}
+.sColor2{background: var(--color-brown); color: #fff}
+.sColorG{background: #ccc; color: #777}
+.sColorG:hover{background: #999; color: #fff;}
+
+.bColorF{border: 1px solid #ccc; color: #ccc}
+.bColorF:hover{background: rgba(255,255,255,0.1);}
+
+/* 정렬 */
+.tac{text-align: center;}
+.tal{text-align: left;}
+.tar{text-align: right;}
 
 
 @media (max-width: 1400px) {
@@ -58,6 +74,9 @@ body{background-color: #333332;}
     :root{
         --vertical-padding: 30px;
     }
+
+    .nBtn{height: 30px; font-size: 13px;}
+    .rBtn{padding: 0 18px;}
 }
 
 @media (max-width: 450px) {
@@ -87,9 +106,13 @@ body{background-color: #333332;}
 @media (max-width: 900px) {
   .horizontal-form article{flex-direction: column; gap: 10px; margin: 10px 0;}
   .horizontal-form article h5{width: 100%; font-size: 13px;}
+  .horizontal-form article .right{width: 100%;}
   .horizontal-form article .input{width: 100%;}
 
   .horizontal-form article .input textarea{min-height: 150px;}
+
+
+  .horizontal-form article .inline{width: 100%;}
 
   .horizontal-form article label.file span{font-size: 13px; height: 40px; padding: 0 15px;}
 }

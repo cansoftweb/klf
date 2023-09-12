@@ -6,7 +6,7 @@
 }
 
 .container .img {
-  height: 175px;
+  overflow: hidden;
   background: #ccc no-repeat center center/cover;
   position: relative;
 }
