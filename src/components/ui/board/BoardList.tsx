@@ -4,7 +4,7 @@ import BoardListArticle from "./BoardListArticle";
 const BoardList = ({
     data = []
 }: {
-    data: any[],
+    data?: any[],
 }) => {
     return (
         <div className="container">
@@ -17,8 +17,9 @@ const BoardList = ({
                 {data.map(({
                     title,
                     date,
-                }) => (
+                }, i) => (
                     <BoardListArticle 
+                    key={`BoardList${i}`}
                     title={title}
                     date={date}
                     />

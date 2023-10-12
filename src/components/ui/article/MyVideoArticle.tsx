@@ -17,14 +17,16 @@ const MyVideoArticle = ({
     const [toggle, setToggle] = useState(false)
     const node = useRef<HTMLDivElement | null>(null);
 
-    const clickOutside = (e:any) => {
-        // 모달이 열려 있고 모달의 바깥쪽을 눌렀을 때 창 닫기
-        if (toggle && node.current && !node.current.contains(e.target)) {
-          setToggle(false);
-        }
-    };
+
 
     useEffect(() => {
+
+        const clickOutside = (e:any) => {
+            // 모달이 열려 있고 모달의 바깥쪽을 눌렀을 때 창 닫기
+            if (toggle && node.current && !node.current.contains(e.target)) {
+              setToggle(false);
+            }
+        };
        
     
         document.addEventListener("mousedown", clickOutside);

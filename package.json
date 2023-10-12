@@ -2,12 +2,15 @@
   "name": "klf",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://cansoftweb.github.io/klf",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "static": "next build && next export && touch out/.nojekyll"
+    "static": "next build && next export && touch out/.nojekyll",
+    "deploy": "npx next build && npx next export && npx touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
+
   },
   "dependencies": {
     "@capacitor/android": "^5.3.0",

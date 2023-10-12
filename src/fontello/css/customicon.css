@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'customicon';
-  src: url('../font/customicon.eot?1938569');
-  src: url('../font/customicon.eot?1938569#iefix') format('embedded-opentype'),
-       url('../font/customicon.woff2?1938569') format('woff2'),
-       url('../font/customicon.woff?1938569') format('woff'),
-       url('../font/customicon.ttf?1938569') format('truetype'),
-       url('../font/customicon.svg?1938569#customicon') format('svg');
+  src: url('../../../public/icons/font/customicon.eot?1938569');
+  src: url('../../../public/icons/font/customicon.eot?1938569#iefix') format('embedded-opentype'),
+       url('../../../public/icons/font/customicon.woff2?1938569') format('woff2'),
+       url('../../../public/icons/font/customicon.woff?1938569') format('woff'),
+       url('../../../public/icons/font/customicon.ttf?1938569') format('truetype'),
+       url('../../../public/icons/font/customicon.svg?1938569#customicon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
