@@ -25,6 +25,10 @@
   gap: 10px;
 }
 
+.container article > div + div {
+  margin-top: 10px;
+}
+
 .container article > div input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -46,4 +50,14 @@
 
 .container .bottomBtn {
   margin-top: 50px;
+}
+
+.container .withdraw {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .withdraw button {
+  color: #999;
+  text-decoration: underline;
 }

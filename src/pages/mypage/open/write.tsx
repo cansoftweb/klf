@@ -1,4 +1,6 @@
 import MypageLayout from "@/components/modules/mypage/MypageLayout";
+import EditorIntroduce from "@/components/modules/mypage/open/EditorIntroduce";
+import QuillEditor from "@/components/modules/mypage/open/QuillEditor";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from 'react';
 
@@ -99,12 +101,19 @@ const MyOpenWriteScreen = () => {
                     </article>
                     <article>
                         <h5>강의 소개</h5>
+                        {/* <div className="edior">
+                            <EditorIntroduce />
+                        </div> */}
                         <div className="input">
+                          
                             <textarea placeholder="강의 소개를 입력해주세요" ></textarea>
                         </div>
                     </article>
                     <article>
                         <h5>강의 내용</h5>
+                        {/* <div className="edior">
+                            <EditorIntroduce />
+                        </div> */}
                         <div className="input">
                             <textarea placeholder="강의 내용를 입력해주세요" ></textarea>
                         </div>
@@ -137,6 +146,8 @@ const MyOpenWriteScreen = () => {
             </form>
             <style jsx>{`
                 .addBtn{border: 1px solid #ccc; color: #eee; border-radius: 5px; padding: 3px 8px;}
+
+                .edior{background-color: #fff; width: 100%; color: #111}
 
                 .count{color: #999; padding: 0 10px;}
 

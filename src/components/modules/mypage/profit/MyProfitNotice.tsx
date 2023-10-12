@@ -1,4 +1,4 @@
-const MyIncomeNotice = () => {
+const MyProfitNotice = () => {
     return (
         <div className="notice">
             <p>· 본인의 명의로 된 통장으로만 출금이 가능하며, 타인의 명의로된 계좌 출금신청은 출금취소 됩니다.</p>
@@ -16,4 +16,4 @@ const MyIncomeNotice = () => {
     );
 }
 
-export default MyIncomeNotice;
+export default MyProfitNotice;

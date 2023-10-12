@@ -1,7 +1,9 @@
-const MyIncomeList = () => {
+import Pagination from "@/components/ui/pagination/Pagination";
+
+const MyProfitList = () => {
     return (
         <div>
-            <h3>수익금 내역</h3>
+            <h3>출금 내역</h3>
             <table>
                 <colgroup>
                     <col width="120px" />
@@ -11,12 +13,17 @@ const MyIncomeList = () => {
                     <td>
                         <p className="title">수익금  90,000원</p>
                         <div className="info">
-                            <span>2023.08.21</span>
                             <span>판매금액 : 100,000원</span>
+                            <span>신청일 2023.08.21</span>
+                            <span>완료일 2023.08.21</span>
                         </div>
                     </td>
                 </tr>
             </table>
+            <Pagination 
+                currentPage={1}
+                totalPages={10}
+            />
             <style jsx>{`
                 h3{border-bottom: 1px solid #555; margin-bottom: 25px; padding-bottom: 10px}
                 table{width: 100%;}
@@ -40,4 +47,4 @@ const MyIncomeList = () => {
     );
 }
 
-export default MyIncomeList;
+export default MyProfitList;

@@ -1,4 +1,4 @@
-const MyIncomView = () => {
+const MyProfitView = () => {
     return (
         <div className="container">
             <dl>
@@ -28,4 +28,4 @@ const MyIncomView = () => {
     );
 }
 
-export default MyIncomView;
+export default MyProfitView;
