@@ -8,6 +8,7 @@ const nextConfig = {
   images: {
 		unoptimized: true
 	},
+  basePath: "/klf.pages.dev",
 }
 
 module.exports = nextConfig
