@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
-const debug = process.env.NODE_ENV !== "production";
-const repository = "http://cansoftweb.github.io/klf";
 
 const nextConfig = {
+  generateBuildId: async() => 'constant-build-id',
   reactStrictMode: true,
-  assetPrefix: ".",
-  images: {
+	images: {
 		unoptimized: true
 	},
-  // basePath: "//",
 }
 
 module.exports = nextConfig
