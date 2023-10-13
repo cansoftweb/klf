@@ -4,11 +4,11 @@ const repository = "http://cansoftweb.github.io/klf";
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: '/',
+  assetPrefix: '//',
   images: {
 		unoptimized: true
 	},
-  // basePath: "/klf.pages.dev",
+  // basePath: "//",
 }
 
 module.exports = nextConfig
